@@ -1,5 +1,5 @@
 
-function openStream(cb) {
+async function openStream(cb) {
     let stream = null;
     try {
         stream = await navigator.mediaDevices.getUserMedia({ audio: false, video: true });
